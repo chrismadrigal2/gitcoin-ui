@@ -1,10 +1,5 @@
 jQuery(document).ready(function ($) {
 
-  /*Initial Animated Items*/
-
-  $('.menu').addClass('animated slideInDown');
-  $('#slide1 .slide-content').addClass('animated fadeInDown');
-
   $(window).stellar();
 
   var slide = $('.slide');

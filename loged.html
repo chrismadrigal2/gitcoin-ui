@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +15,7 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/loged.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -24,26 +27,57 @@
   </head>
   <body>
   <!-- For a quick Message / notification -->
-  <div class="top-bar fixed">
-    <div class="container row"></div>
+  <div class="top-bar ">
+<!--     <div class="container animated slideInDown">
+      <div class="message">
+        <span><i class="fa fa-check-circle-o"></i> Signed in successfully.</span>
+      </div>
+    </div> -->
   </div>
 
   <!-- Navegation. -->
-  <div class="menu fixed animated slideInDown">
+  <div class="menu small">
     <div class="container clearfix">
-
       <div class="row">
         <div id="logo" class="col-md-3">
           <h4><a href="index.html">Gitcoin</a></h4 class="muted">
         </div>
 
         <div id="nav" class="col-md-9">
-          <ul class="navigation">
-            <li><a href="#" data-slide="1" class="trigger-slide">Home</a></li>
-            <li><a href="#" data-slide="2" class="trigger-slide">Our Comunity</a></li>
-            <li><a href="#" data-slide="3" class="trigger-slide">About</a></li>
-            <li><a href="loged.html" class="btn btn-sm btn-primary login-btn">Login</a></li>
-          </ul>
+          <div class="profile-menu">
+            <div class="dropdown">
+              <a class=" dropdown-toggle" data-toggle="dropdown">
+                <img src="images/carlos-cardona.png" alt="" class="user-profile">
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <div class="menu-header">
+                  <span class="name">Carlos Cardona</span>
+                </div>
+                <ul class="menu-list clearfix row">
+                  <li class="col-md-4">
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-user"></i></span>
+                      <span class="text">Profile</span>
+                    </a>
+                  </li>
+                  <li class="col-md-4">
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-gift"></i></span>
+                      <span class="text">Donations</span>
+                    </a>
+                  </li>
+                  <li class="col-md-4">
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-power-off "></i></span>
+                      <span class="text">Logout</span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,7 +86,7 @@
 
 
   <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-    <div class="container animated fadeInDown clearfix">
+    <div class="container clearfix">
       <div class="slide-content">
         <h1>Gitcoin</h1>
         <h2>Social philanthropy.</h2>
@@ -155,21 +189,6 @@
   </div>
 
 
-
-<!--   <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-
-      <div class="grid_12">
-        <h1>Credits</h1>
-        <h2><a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> was made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</h2>
-        <p>Don't forget to follow me!</p>
-        <p><a href="https://twitter.com/Jalxob" target="_blank"><img src="images/twitter.png"></a> <a href="http://dribbble.com/jalxob" target="_blank"><img src="images/dribbble.png"></a></p>
-      </div>
-
-    </div>
-  </div> -->
-
-
     <!-- Load Vendor Scripts-->
     <script src="vendor/jquery-1.8.3.min.js"></script>
     <script src="vendor/jquery-ui-1.10.3.custom.min.js"></script>
@@ -190,3 +209,4 @@
 
   </body>
 </html>
+
