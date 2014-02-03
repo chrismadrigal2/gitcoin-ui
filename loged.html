@@ -23,367 +23,524 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
-
   </head>
   <body>
-  <!-- For a quick Message / notification -->
-  <div class="top-bar ">
-<!--     <div class="container animated slideInDown">
-      <div class="message">
-        <span><i class="fa fa-check-circle-o"></i> Signed in successfully.</span>
-      </div>
-    </div> -->
-  </div>
+    <!-- For a quick Message / notification -->
+    <div class="top-bar ">
+    </div>
 
-  <!-- Navegation. -->
-  <div class="menu small">
-    <div class="container clearfix">
-      <div class="row">
-        <div id="logo" class="col-md-3">
-          <h4><a href="index.html">Gitcoin</a></h4 class="muted">
-        </div>
-
-        <div id="nav" class="col-md-9">
-          <div class="profile-menu">
-            <div class="dropdown">
-              <a class=" dropdown-toggle" data-toggle="dropdown">
-                <img src="images/carlos-cardona.png" alt="" class="user-profile">
-              </a>
-              <div class="dropdown-menu" role="menu">
-                <div class="menu-header">
-                  <span class="name">Carlos Cardona</span>
+    <!-- Navegation. -->
+    <div class="menu small">
+      <div class="container clearfix">
+        <div class="row">
+          <div id="logo" class="col-md-3">
+            <h4><a href="index.html">Gitcoin</a></h4 class="muted">
+          </div>
+          <div id="nav" class="col-md-9">
+            <div class="profile-menu">
+              <div class="dropdown">
+                <a class=" dropdown-toggle" data-toggle="dropdown">
+                  <img src="images/carlos-cardona.png" alt="" class="user-profile">
+                </a>
+                <div class="dropdown-menu" role="menu">
+                  <div class="menu-header">
+                    <span class="name">Carlos Cardona</span>
+                  </div>
+                  <ul class="menu-list clearfix row">
+                    <li class="col-md-4">
+                      <a href="#">
+                        <span class="icon"><i class="fa fa-user"></i></span>
+                        <span class="text">Profile</span>
+                      </a>
+                    </li>
+                    <li class="col-md-4">
+                      <a href="#">
+                        <span class="icon"><i class="fa fa-gift"></i></span>
+                        <span class="text">Donations</span>
+                      </a>
+                    </li>
+                    <li class="col-md-4">
+                      <a href="#">
+                        <span class="icon"><i class="fa fa-power-off "></i></span>
+                        <span class="text">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="menu-list clearfix row">
-                  <li class="col-md-4">
-                    <a href="#">
-                      <span class="icon"><i class="fa fa-user"></i></span>
-                      <span class="text">Profile</span>
-                    </a>
-                  </li>
-                  <li class="col-md-4">
-                    <a href="#">
-                      <span class="icon"><i class="fa fa-gift"></i></span>
-                      <span class="text">Donations</span>
-                    </a>
-                  </li>
-                  <li class="col-md-4">
-                    <a href="#">
-                      <span class="icon"><i class="fa fa-power-off "></i></span>
-                      <span class="text">Logout</span>
-                    </a>
-                  </li>
-                </ul>
-
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-      <div class="row marketing">
-        <div class="col-md-6">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Recent Donations</h6>
-            <ul class="recent-donation-list">
-              <li>
-                <div class="box donations-box">
-                  <div class="donors">
-                    <div class="from inline-block">
-                      <div class="user-info">
-                        <div class="box-picture">
-                          <img src="images/natalie.jpeg" alt="Natalie Cardona">
+    <!-- Newest Activity Items -->
+    <section class="slide" id="newest-section" data-stellar-background-ratio="0.5">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Recent Donations</h6>
+              <ul class="recent-donation-list">
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                          </div>
                         </div>
                       </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/chris.png" alt="Carlos Cardona">
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">2 days ago</span>
+                          <a href="#">Natalie Cardona</a>
+                          <span>donated to</span>
+                          <a href="#">Chris Madrigal</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"hey buddy! you still out there? Fill out your profile and Get active on  Gitcoin.co so we can learn more..."</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        4 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00031025
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.25
+                        </p>
+                      </div>
                     </div>
-                    <div class="divider inline-block">
-                      <i class="fa fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/egghead.jpeg" alt="Egghead">
+                        </div>
+                      </div>
                     </div>
-                    <div class="to inline-block">
-                      <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">3 days ago</span>
+                          <a href="#">Carlos Cardona</a>
+                          <span>donated to</span>
+                          <a href="#">egghead</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"Good job buddy, keep it up!, I really like how your project is comming along and will like to support you every step of the way!!"</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        7 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00122
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.99
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/egghead.jpeg" alt="Natalie Cardona">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/sol.jpeg" alt="Carlos Cardona">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">4 days ago</span>
+                          <a href="#">Egghead</a>
+                          <span>donated to</span>
+                          <a href="#">Sol Cardona Bitcoin Trust</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"Hey buddy there is a small donation to you..."</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        0 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00031025
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.25
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#">More Recent Donations</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Newest Users</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">1 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Carlos Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
                         <img src="images/chris.png" alt="Carlos Cardona">
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="box-content">
-                    <div class="donors-info">
-                      <p>
-                        <span class="time">2 days ago</span>
-                        <a href="#">Natalie Cardona</a>
-                        <span>donated to</span>
-                        <a href="#">Chris Madrigal</a>
-                      </p>
-                    </div>
-                    <div class="message">
-                      <p>"hey buddy! you still out there? Fill out your profile and Get active on  Gitcoin.co so we can learn more..."</p>
-                    </div>
-                    <div class="comments">
-                      <i class="fa fa-comments-o"></i>
-                      4 Comments
-                    </div>
-                    <div class="amount">
-                      <p class="amount-label">
-                        <i class="fa fa-btc"></i> 0.00031025
-                        <span class="divider">/</span>
-                        <i class="fa fa-usd"></i> 0.25
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="box donations-box">
-                  <div class="donors">
-                    <div class="from inline-block">
-                      <div class="user-info">
-                        <div class="box-picture">
-                          <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                      <div class="box-header">
+                        <span class="name">Chris Madrigal</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">5 days ago</span>
                         </div>
                       </div>
-
                     </div>
-                    <div class="divider inline-block">
-                      <i class="fa fa-arrow-right"></i>
-                    </div>
-                    <div class="to inline-block">
-                      <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-                        <img src="images/egghead.jpeg" alt="Egghead">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/sol.jpeg" alt="Sol Cardona Bitcoin Trust">
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="box-content">
-                    <div class="donors-info">
-                      <p>
-                        <span class="time">3 days ago</span>
-                        <a href="#">Carlos Cardona</a>
-                        <span>donated to</span>
-                        <a href="#">egghead</a>
-                      </p>
-                    </div>
-                    <div class="message">
-                      <p>"Good job buddy, keep it up!, I really like how your project is comming along and will like to support you every step of the way!!"</p>
-                    </div>
-                    <div class="comments">
-                      <i class="fa fa-comments-o"></i>
-                      7 Comments
-                    </div>
-                    <div class="amount">
-                      <p class="amount-label">
-                        <i class="fa fa-btc"></i> 0.00122
-                        <span class="divider">/</span>
-                        <i class="fa fa-usd"></i> 0.99
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="box donations-box">
-                  <div class="donors">
-                    <div class="from inline-block">
-                      <div class="user-info">
-                        <div class="box-picture">
-                          <img src="images/egghead.jpeg" alt="Natalie Cardona">
+                      <div class="box-header">
+                        <span class="name">Sol Cardona Bitcoin Trust</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">9 days ago</span>
                         </div>
                       </div>
-
                     </div>
-                    <div class="divider inline-block">
-                      <i class="fa fa-arrow-right"></i>
-                    </div>
-                    <div class="to inline-block">
-                      <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-                        <img src="images/sol.jpeg" alt="Carlos Cardona">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">10 days ago</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="box-content">
-                    <div class="donors-info">
-                      <p>
-                        <span class="time">4 days ago</span>
-                        <a href="#">Egghead</a>
-                        <span>donated to</span>
-                        <a href="#">Sol Cardona Bitcoin Trust</a>
-                      </p>
-                    </div>
-                    <div class="message">
-                      <p>"Hey buddy there is a small donation to you..."</p>
-                    </div>
-                    <div class="comments">
-                      <i class="fa fa-comments-o"></i>
-                      0 Comments
-                    </div>
-                    <div class="amount">
-                      <p class="amount-label">
-                        <i class="fa fa-btc"></i> 0.00031025
-                        <span class="divider">/</span>
-                        <i class="fa fa-usd"></i> 0.25
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Newest Users</h6>
-            <ul class="user-list">
-              <li>
-                <a href="#">
-                  <div class="box user-box">
-                    <div class="box-picture">
-                      <img src="images/natalie.jpeg" alt="Natalie Cardona">
-                    </div>
-                    <div class="box-header">
-                      <span class="name">Natalie Cardona</span>
-                    </div>
-                    <div class="box-meta">
-                      <div class="time">Time (US & Canada)</div>
-                    </div>
-                    <div class="box-content">
-                      <div class="member-info">
-                        <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
-                        <span class="text">1 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="box user-box">
-                    <div class="box-picture">
-                      <img src="images/carlos-cardona.png" alt="Carlos Cardona">
-                    </div>
-                    <div class="box-header">
-                      <span class="name">Carlos Cardona</span>
-                    </div>
-                    <div class="box-meta">
-                      <div class="time">Time (US & Canada)</div>
-                    </div>
-                    <div class="box-content">
-                      <div class="member-info">
-                        <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
-                        <span class="text">2 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="box user-box">
-                    <div class="box-picture">
-                      <img src="images/chris.png" alt="Carlos Cardona">
-                    </div>
-                    <div class="box-header">
-                      <span class="name">Chris Madrigal</span>
-                    </div>
-                    <div class="box-meta">
-                      <div class="time">Time (US & Canada)</div>
-                    </div>
-                    <div class="box-content">
-                      <div class="member-info">
-                        <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
-                        <span class="text">5 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="box user-box">
-                    <div class="box-picture">
-                      <img src="images/sol.jpeg" alt="Sol Cardona Bitcoin Trust">
-                    </div>
-                    <div class="box-header">
-                      <span class="name">Sol Cardona Bitcoin Trust</span>
-                    </div>
-                    <div class="box-meta">
-                      <div class="time">Time (US & Canada)</div>
-                    </div>
-                    <div class="box-content">
-                      <div class="member-info">
-                        <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
-                        <span class="text">9 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="box user-box">
-                    <div class="box-picture">
-                      <img src="images/egghead.jpeg" alt="Carlos Cardona">
-                    </div>
-                    <div class="box-header">
-                      <span class="name">Egghead</span>
-                    </div>
-                    <div class="box-meta">
-                      <div class="time">Time (US & Canada)</div>
-                    </div>
-                    <div class="box-content">
-                      <div class="member-info">
-                        <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
-                        <span class="text">10 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-      <div class="row marketing">
-        <div class="col-md-6">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Top Givers</h6>
-            <div class="box" style="color:#34495e; padding:20px">
-              <h5>comming soon..</h5>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, adipisci dicta soluta dolorem modi atque doloribus minus suscipit eligendi ipsum assumenda incidunt dolorum! Molestias, saepe, voluptas, molestiae eaque modi nisi corrupti dolorum asperiores eius harum a at quia consequuntur illum maiores quasi temporibus vero suscipit nulla sed earum ratione tempora reprehenderit est quibusdam fuga explicabo aliquam laboriosam iure delectus! Eos, recusandae, fugiat, tempore, ex est provident dolorum omnis sapiente repudiandae sequi aut tenetur quia sit mollitia veritatis obcaecati magni? Veniam, unde, ipsa explicabo fugit temporibus sit voluptatibus officiis esse repellendus vero placeat quo nemo facilis iste id obcaecati quis veritatis?
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Top Receivers</h6>
-            <div class="box" style="color:#34495e;padding:20px">
-              <h5>Coming soon...</h5>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, adipisci dicta soluta dolorem modi atque doloribus minus suscipit eligendi ipsum assumenda incidunt dolorum! Molestias, saepe, voluptas, molestiae eaque modi nisi corrupti dolorum asperiores eius harum a at quia consequuntur illum maiores quasi temporibus vero suscipit nulla sed earum ratione tempora reprehenderit est quibusdam fuga explicabo aliquam laboriosam iure delectus! Eos, recusandae, fugiat, tempore, ex est provident dolorum omnis sapiente repudiandae sequi aut tenetur quia sit mollitia veritatis obcaecati magni? Veniam, unde, ipsa explicabo fugit temporibus sit voluptatibus officiis esse repellendus vero placeat quo nemo facilis iste id obcaecati quis veritatis?
+                  </a>
+                </li>
+              </ul>
+              <a href="#">Search All Users</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="footer">
-    <div class="container">
-      <p class="copywrite">© Gitcoin 2014</p>
-    </div>
-  </div>
+    <!-- Top Givers and recievers -->
+    <section class="slide" id="top-users-section" data-stellar-background-ratio="0.5">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Top Givers</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Carlos Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.4018173 BTC / $325.89 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/max.jpeg" alt="Max">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Max</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.11134 BTC / $89.72 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                        <span class="email">nmcardona123@gmail.com</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.02075676 BTC / $16.68 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.001 BTC / $0.81 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#">More Top Givers</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Top Receivers</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.08078888 BTC / $65.04 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/chris.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Chris Madrigal</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.0733175 BTC / $59.02 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/sol.jpeg" alt="Sol Cardona Bitcoin Trust">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Sol Cardona Bitcoin Trust</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.001 BTC / $0.81 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.0009 BTC / $0.80 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#">More Top receivers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <div class="footer">
+      <div class="container">
+        <p class="copywrite">© Gitcoin 2014</p>
+      </div>
+    </div>
 
     <!-- Load Vendor Scripts-->
     <script src="vendor/jquery-1.8.3.min.js"></script>
@@ -402,7 +559,6 @@
 
     <!-- Custom Scripts -->
     <script src="js/scripts.js"></script>
-
   </body>
 </html>
 

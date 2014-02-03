@@ -9,11 +9,11 @@
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="vendor/flat-ui/css/flat-ui.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="fonts/gitcoin/gitcoin-font.css" rel="stylesheet">
     <!-- <link href="css/normalize.css" rel="stylesheet"> -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -22,153 +22,564 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body class="no-">
   <!-- For a quick Message / notification -->
-  <div class="top-bar fixed">
-    <div class="container row"></div>
-  </div>
-
-  <!-- Navegation. -->
-  <div class="menu fixed animated slideInDown">
-    <div class="container clearfix">
-
-      <div class="row">
-        <div id="logo" class="col-md-3">
-          <h4><a href="index.html">Gitcoin</a></h4 class="muted">
-        </div>
-
-        <div id="nav" class="col-md-9">
-          <ul class="navigation">
-            <li><a href="#" data-slide="1" class="trigger-slide">Home</a></li>
-            <li><a href="#" data-slide="2" class="trigger-slide">Our Comunity</a></li>
-            <li><a href="#" data-slide="3" class="trigger-slide">About</a></li>
-            <li><a href="loged.html" class="btn btn-sm btn-primary login-btn">Login</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="top-bar">
+      <div class="container row"></div>
     </div>
-  </div>
 
-
-
-  <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-    <div class="container animated fadeInDown clearfix">
-      <div class="slide-content">
-        <h1>Gitcoin</h1>
-        <h2>Social philanthropy.</h2>
-        <p>Give bitcoin donations to your favorite projects.</p>
-        <p class="meta">
-          8 users sharing <strong>0.07486 BTC</strong> / <strong>$64.07</strong> across 22 total donations
-        </p>
-        <button class="btn btn-hg btn-primary">Sign up now</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-      <div class="row marketing">
-        <div class="col-md-4">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Newest Users</h6>
-            <div class="box">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, nisi error enim reprehenderit quo distinctio magnam dolorum officiis repellendus consequuntur architecto voluptatibus quae illum deleniti voluptatum odit dolor eligendi autem recusandae nesciunt ex perferendis alias. Ab, excepturi, quisquam voluptatibus quia facilis fugit nostrum illum aut inventore cum possimus deserunt explicabo assumenda eaque voluptate iusto rerum pariatur alias perspiciatis asperiores consequatur odio nemo molestias dolor laborum accusantium mollitia eius unde recusandae culpa labore quis sequi sint! Animi, impedit, cupiditate, temporibus ducimus quos nobis ratione sequi at recusandae natus repellendus dolorum expedita laboriosam accusamus voluptatum. Iusto, praesentium, fugiat repudiandae blanditiis nostrum voluptatem.
+    <!-- Navegation. -->
+    <div class="menu-wrapper">
+      <div class="menu animated slideInDown">
+        <div class="container clearfix">
+          <div class="row">
+            <div id="logo" class="col-md-3">
+              <h4><a href="index.html">Gitcoin</a></h4 class="muted">
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Top Givers</h6>
-            <div class="box">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, nisi error enim reprehenderit quo distinctio magnam dolorum officiis repellendus consequuntur architecto voluptatibus quae illum deleniti voluptatum odit dolor eligendi autem recusandae nesciunt ex perferendis alias. Ab, excepturi, quisquam voluptatibus quia facilis fugit nostrum illum aut inventore cum possimus deserunt explicabo assumenda eaque voluptate iusto rerum pariatur alias perspiciatis asperiores consequatur odio nemo molestias dolor laborum accusantium mollitia eius unde recusandae culpa labore quis sequi sint! Animi, impedit, cupiditate, temporibus ducimus quos nobis ratione sequi at recusandae natus repellendus dolorum expedita laboriosam accusamus voluptatum. Iusto, praesentium, fugiat repudiandae blanditiis nostrum voluptatem.
+            <div id="nav" class="col-md-9">
+              <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Thoughts</a></li>
+                <li><a href="loged.html" class="btn btn-sm btn-primary login-btn">Login</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="users-list-wrapper">
-            <h6 class="list-title">Top Receivers</h6>
-            <div class="box">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, nisi error enim reprehenderit quo distinctio magnam dolorum officiis repellendus consequuntur architecto voluptatibus quae illum deleniti voluptatum odit dolor eligendi autem recusandae nesciunt ex perferendis alias. Ab, excepturi, quisquam voluptatibus quia facilis fugit nostrum illum aut inventore cum possimus deserunt explicabo assumenda eaque voluptate iusto rerum pariatur alias perspiciatis asperiores consequatur odio nemo molestias dolor laborum accusantium mollitia eius unde recusandae culpa labore quis sequi sint! Animi, impedit, cupiditate, temporibus ducimus quos nobis ratione sequi at recusandae natus repellendus dolorum expedita laboriosam accusamus voluptatum. Iusto, praesentium, fugiat repudiandae blanditiis nostrum voluptatem.
-            </div>
-
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-
-  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-      <div class="row marketing">
-        <div class="col-md-4">
-          <div class="about-wrapper">
-            <h6 class="about-title">What is Gitcoin?</h6>
-            <div class="about-icon">
-              <i class="fa fa-question"></i>
-            </div>
-            <div class="about-text">
-              Gitcoin is a way for people to easily give one-time or weekly donations to their favorite projects. Think of it as social philanthropy using bitcoin.
-              We are currently built on top of the Coinbase API which means that in order to receive donation with Gitcoin you'll need to have a Coinbase account. Need more text, need more text, need more text need more text, need more text, need.
-            </div>
-            <a href="#" class="readmore">Read more...</a>
-
-          </div>
+    <!-- Banner section -->
+    <section class="slide" id="banner-section" data-stellar-background-ratio="0.5">
+      <div class="container animated fadeInDown clearfix">
+        <div class="slide-content">
+          <h1>Gitcoin</h1>
+          <h2>Social philanthropy.</h2>
+          <p>Give bitcoin donations to your favorite projects.</p>
+          <p class="meta">
+            8 users sharing <strong>0.07486 BTC</strong> / <strong>$64.07</strong> across 22 total donations
+          </p>
+          <button class="btn btn-hg btn-primary">Sign up now</button>
         </div>
-        <div class="col-md-4">
-          <div class="about-wrapper">
-            <h6 class="about-title">Who is Gitcoin?</h6>
-            <div class="about-icon">
-              <i class="fa fa-user"></i>
-            </div>
-            <div class="about-text">
-             Gitcoin is currently Carlos Cardona
-             If you'd like to support the project you can make a donation via gitcoin.co.
-             Need more text, need more text, need more text, need more text, need more text, need more text,need more text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque facilis colusum consectetur adipisicing arte architecto cumque autem aliquam!
-            </div>
-            <a href="#" class="readmore">Read more...</a>
+      </div>
+    </section>
 
+    <section class="slide" id="newest-section" data-stellar-background-ratio="0.5">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Recent Donations</h6>
+              <ul class="recent-donation-list">
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/chris.png" alt="Carlos Cardona">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">2 days ago</span>
+                          <a href="#">Natalie Cardona</a>
+                          <span>donated to</span>
+                          <a href="#">Chris Madrigal</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"hey buddy! you still out there? Fill out your profile and Get active on  Gitcoin.co so we can learn more..."</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        4 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00031025
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.25
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/egghead.jpeg" alt="Egghead">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">3 days ago</span>
+                          <a href="#">Carlos Cardona</a>
+                          <span>donated to</span>
+                          <a href="#">egghead</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"Good job buddy, keep it up!, I really like how your project is comming along and will like to support you every step of the way!!"</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        7 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00122
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.99
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="box donations-box">
+                    <div class="donors">
+                      <div class="from inline-block">
+                        <div class="user-info">
+                          <div class="box-picture">
+                            <img src="images/egghead.jpeg" alt="Natalie Cardona">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="divider inline-block">
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+                      <div class="to inline-block">
+                        <div class="box-picture" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                          <img src="images/sol.jpeg" alt="Carlos Cardona">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box-content">
+                      <div class="donors-info">
+                        <p>
+                          <span class="time">4 days ago</span>
+                          <a href="#">Egghead</a>
+                          <span>donated to</span>
+                          <a href="#">Sol Cardona Bitcoin Trust</a>
+                        </p>
+                      </div>
+                      <div class="message">
+                        <p>"Hey buddy there is a small donation to you..."</p>
+                      </div>
+                      <div class="comments">
+                        <i class="fa fa-comments-o"></i>
+                        0 Comments
+                      </div>
+                      <div class="amount">
+                        <p class="amount-label">
+                          <i class="fa fa-btc"></i> 0.00031025
+                          <span class="divider">/</span>
+                          <i class="fa fa-usd"></i> 0.25
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#">More Recent Donations</a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="about-wrapper">
-            <h6 class="about-title">Why Coinbase?</h6>
-            <div class="about-icon">
-              <i class="fa fa-btc"></i>
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Newest Users</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">1 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Carlos Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/chris.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Chris Madrigal</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">5 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/sol.jpeg" alt="Sol Cardona Bitcoin Trust">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Sol Cardona Bitcoin Trust</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">9 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="fa fa-clock-o"></i> Joined:</span>
+                          <span class="text">10 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#">Search All Users</a>
             </div>
-            <div class="about-text">
-              We think Coinbase rocks! They are the most legit place to buy and sell bitcoin and they are also the place that we ourselves store our online wallets.Coinbase is located in San Francisco and has raised money from the best VCs out there.
-              Also, there are more practical reasons for using Coinbase. They offer offblockchain micro-payments between Coinbase accounts.
-            </div>
-            <a href="#" class="readmore">Read more...</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="footer">
-    <div class="container">
-      <p class="copywrite">© Gitcoin 2014</p>
-    </div>
-  </div>
-
-
-
-<!--   <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-
-      <div class="grid_12">
-        <h1>Credits</h1>
-        <h2><a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> was made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</h2>
-        <p>Don't forget to follow me!</p>
-        <p><a href="https://twitter.com/Jalxob" target="_blank"><img src="images/twitter.png"></a> <a href="http://dribbble.com/jalxob" target="_blank"><img src="images/dribbble.png"></a></p>
+    <!-- Top Givers and recievers -->
+    <section class="slide" id="top-users-section" data-stellar-background-ratio="0.5">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Top Givers</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/carlos-cardona.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Carlos Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.4018173 BTC / $325.89 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/max.jpeg" alt="Max">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Max</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.11134 BTC / $89.72 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                        <span class="email">nmcardona123@gmail.com</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.02075676 BTC / $16.68 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-give"></i> Has Given:</span>
+                          <span class="text">0.001 BTC / $0.81 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#">More Top Givers</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="users-list-wrapper">
+              <h6 class="list-title">Top Receivers</h6>
+              <ul class="user-list">
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/natalie.jpeg" alt="Natalie Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Natalie Cardona</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.08078888 BTC / $65.04 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/chris.png" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Chris Madrigal</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.0733175 BTC / $59.02 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/sol.jpeg" alt="Sol Cardona Bitcoin Trust">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Sol Cardona Bitcoin Trust</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.001 BTC / $0.81 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="box user-box">
+                      <div class="box-picture">
+                        <img src="images/egghead.jpeg" alt="Carlos Cardona">
+                      </div>
+                      <div class="box-header">
+                        <span class="name">Egghead</span>
+                      </div>
+                      <div class="box-meta">
+                        <div class="time">Time (US & Canada)</div>
+                      </div>
+                      <div class="box-content">
+                        <div class="member-info">
+                          <span class="box-label"><i class="icon-receive"></i> Has Received:</span>
+                          <span class="text">0.0009 BTC / $0.80 total</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#">More Top receivers</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section class="slide" id="about-section" data-stellar-background-ratio="0.5">
+      <div class="container clearfix">
+        <div class="row marketing">
+          <div class="col-md-4">
+            <div class="about-wrapper">
+              <h6 class="about-title">What is Gitcoin?</h6>
+              <div class="about-icon">
+                <i class="fa fa-question"></i>
+              </div>
+              <div class="about-text">
+                Gitcoin is a way for people to easily give one-time or weekly donations to their favorite projects. Think of it as social philanthropy using bitcoin.
+                We are currently built on top of the Coinbase API which means that in order to receive donation with Gitcoin you'll need to have a Coinbase account. Need more text, need more text, need more text need more text, need more text, need.
+              </div>
+              <a href="#" class="readmore">Read more...</a>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-wrapper">
+              <h6 class="about-title">Who is Gitcoin?</h6>
+              <div class="about-icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="about-text">
+               Gitcoin is currently Carlos Cardona
+               If you'd like to support the project you can make a donation via gitcoin.co.
+               Need more text, need more text, need more text, need more text, need more text, need more text,need more text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque facilis colusum consectetur adipisicing arte architecto cumque autem aliquam!
+              </div>
+              <a href="#" class="readmore">Read more...</a>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-wrapper">
+              <h6 class="about-title">Why Coinbase?</h6>
+              <div class="about-icon">
+                <i class="fa fa-btc"></i>
+              </div>
+              <div class="about-text">
+                We think Coinbase rocks! They are the most legit place to buy and sell bitcoin and they are also the place that we ourselves store our online wallets.Coinbase is located in San Francisco and has raised money from the best VCs out there.
+                Also, there are more practical reasons for using Coinbase. They offer offblockchain micro-payments between Coinbase accounts.
+              </div>
+              <a href="#" class="readmore">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="container">
+        <p class="copywrite">© Gitcoin 2014</p>
+      </div>
     </div>
-  </div> -->
-
 
     <!-- Load Vendor Scripts-->
     <script src="vendor/jquery-1.8.3.min.js"></script>
